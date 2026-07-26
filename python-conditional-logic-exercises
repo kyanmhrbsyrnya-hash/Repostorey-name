@@ -1,0 +1,49 @@
+# Exercise 1: Even or Odd Checker
+num = int(input('لطفا یک عدد وارد کنید: '))
+if num % 2 == 0:
+    print('عدد زوج است')
+else:
+    print('عدد فرد است')
+
+# Exercise 2: Age Classifier
+age = int(input('لطفا سن خود را وارد کنید: '))
+if age >= 18:
+    print('بالغ')
+else:
+    print('نوجوان')
+
+# Exercise 3: Basic Arithmetic Operations
+num1 = int(input('لطفا عدد اول را وارد کنید: '))
+num2 = int(input('عدد دوم را وارد کنید: '))
+sign = input('علامت را وارد کنید (+ یا -): ')
+
+if sign == '+':
+    print(f'Result: {num1 + num2}')
+elif sign == '-':
+    print(f'Result: {num1 - num2}')
+else:
+    print('علامت وارد شده نامعتبر است')
+
+# Exercise 4: Find the Largest Number
+num1 = int(input('لطفا عدد اول را وارد کنید: '))
+num2 = int(input('عدد دوم را وارد کنید: '))
+num3 = int(input('عدد سوم را وارد کنید: '))
+
+if num1 > num2 and num1 > num3:
+    print(f'{num1} بزرگترین عدد است')
+elif num2 > num1 and num2 > num3:
+    print(f'{num2} بزرگترین عدد است')
+elif num3 > num1 and num3 > num2:
+    print(f'{num3} بزرگترین عدد است')
+else:
+    print('اعداد برابر هستند یا یکی از آن‌ها بزرگترین نیست')
+
+# Exercise 5: Grade Evaluator
+score = float(input('نمره را وارد کنید: '))
+
+if score > 20 or score < 0:
+    print('اشتباه است! نمره باید بین 0 تا 20 باشد.')
+elif score >= 10:
+    print('قبول')
+else:
+    print('رد شد')
