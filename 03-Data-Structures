@@ -1,0 +1,10 @@
+guests=['mona','Ali','sara','reza','gholam reza']
+guests.remove('reza')
+print(guests)
+print(guests[0])
+print(guests[-1])
+print(guests[2])
+print(len(guests))
+
+
+####
