@@ -1,0 +1,27 @@
+member_list = [] # نام لیست را تغییر دادم تا با متغیرها قاطی نشود
+
+# ۱. گرفتن اطلاعات (بدون کامای اضافی در انتها)
+name_input = input('نام را وارد کنید: ')
+age_input = int(input('سن را وارد کنید: '))
+is_member_input = input('آیا عضو هستید (yes/no): ')
+role_input = input('مربی هستید یا شاگرد: ')
+
+# ۲. تبدیل ورودی عضویت به Boolean (True/False)
+# این کار برای پروژه‌های واقعی خیلی مهم است
+is_member = True if is_member_input.lower() == 'yes' else False
+
+# ۳. ساختن دیکشنری (استفاده از متغیرهایی که گرفتیم)
+user_dict = {
+    "name": name_input,
+    "age": age_input,
+    "is_member": is_member,
+    "role": role_input
+}
+
+# ۴. اضافه کردن "کلِ دیکشنری" به لیست
+member_list.append(user_dict)
+
+# ۵. نمایش نتیجه
+print("\nلیست اعضای ثبت شده:")
+print(member_list)
+
