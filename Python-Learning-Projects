@@ -1,0 +1,22 @@
+# تعریف کد خروج و دیکشنری اصلی
+EXIT_CODE = 1111
+inventory = {}
+
+print(f'⚠️ نکته: برای خروج از برنامه، در قسمت تعداد عدد {EXIT_CODE} را وارد کنید.')
+
+while True:
+    commodity = input('\nلطفا نام کالا را وارد کنید: ')
+    try:
+        quantity = int(input('تعداد کالا را وارد کنید: '))
+        if quantity == EXIT_CODE:
+            print("👋 در حال خروج از سیستم مدیریت انبار...")
+            break
+        # ذخیره کالا در دیکشنری (به جای جایگزین کردن، اضافه می‌کنیم)
+        inventory[commodity] = quantity
+        print(f"✅ کالا '{commodity}' با موفقیت ثبت شد.")
+    except ValueError:
+        print("❌ خطا: لطفا برای تعداد فقط عدد وارد کنید!")
+print("\n" + "="*30)
+print("📊 گزارش نهایی موجودی انبار:")
+print(inventory)
+print("="*30)
