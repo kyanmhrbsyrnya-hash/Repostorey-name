@@ -1,0 +1,13 @@
+score=(100)
+serect_number=(7)
+number=int(input('لطفا عدد را حدس بزنید:'))
+while(score!=0 or serect_number==number):
+    number=int(input('لطفا عدد را حدس بزنید:'))    
+    if(number>7):
+        print('عدد بزرگتر است')
+    elif(number<7):
+            print('عددکوچکتر است')
+    else:
+                print('دزست است')
+                break
+    score=score-10
