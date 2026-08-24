@@ -1,0 +1,22 @@
+history=[ ]
+
+while True:
+    num1=int(input('عدد اول:'))
+    num2=int(input('عدد دوم:'))
+    sign=input('علامت وارد کنید')
+    if(sign=='+'):
+        history.append(num1+num2)
+        print(num1+num2)
+    elif(sign=='-'):
+        history.append(num1-num2)
+        print(num1-num2)
+    elif(sign=='*'):
+        history.append(num1*num2)
+        print(num1*num2)
+    elif(sign=='÷'):
+        history.append(num1/num2)
+        print(num1/num2)
+    if(sign=='show'):
+        print(history)
+    if(sign=='erase'):
+        history.clear()
