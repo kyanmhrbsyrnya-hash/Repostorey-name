@@ -1,0 +1,40 @@
+wallet = {}
+
+x = input('Are you ready? (yes/no): ')
+
+while x != 'no' and x != 'end':
+    action = input('\nWhat would you like to do? (earn / spend / show): ')
+    
+    if action == 'earn':
+        commodity = input('Enter item name: ')
+        quantity = int(input('Enter quantity: '))
+        
+        if commodity in wallet:
+            wallet[commodity] += quantity
+        else:
+            wallet[commodity] = quantity
+        print(f"{quantity} {commodity} added.")
+
+    elif action == 'spend':
+        commodity1 = input('Which item to spend? ')
+        current_amount = wallet.get(commodity1)
+        
+        if current_amount is None:
+            print("Item not found!")
+        else:
+            quantity1 = int(input('How many to remove? '))
+            if quantity1 <= current_amount:
+                wallet[commodity1] -= quantity1
+                print(f"{quantity1} {commodity1} spent.")
+            else:
+                print("Insufficient balance!")
+
+    elif action == 'show':
+        print("Your wallet:", wallet)
+
+    else:
+        print("Invalid command!")
+
+    x = input('\nDo you want to continue? (yes/no/end): ')
+
+print("Program finished.")
