@@ -1,0 +1,4 @@
+def my_city(city1):
+    city1=input('شهر را وارد کنید')
+    print(f'{city1}')
+my_city(f'city1')
