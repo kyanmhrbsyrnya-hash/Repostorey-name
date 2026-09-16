@@ -1,0 +1,6 @@
+def environment(h,w):
+     return(h+w)*2
+h=int(input('لطفا طول وارد کنید'))
+w=int(input('لطفا عرض را وارد کنید'))
+mohit=environment(h,w)
+print(mohit)
