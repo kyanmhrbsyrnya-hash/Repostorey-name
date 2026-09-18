@@ -1,0 +1,35 @@
+def Rectangular_perimeter(w,h):
+    return 2*(w+h)
+perimeter=Rectangular_perimeter(5,3)
+print(perimeter)
+
+
+
+###
+def area_triangle(b,h):
+    return(b*h)/2
+area=area_triangle(3,5)
+print(area)
+
+
+
+####
+def minute_seccond(m):
+    return(m*60)
+seccond=minute_seccond(90)
+print(seccond)
+
+
+
+####
+def fa_sa(sa):
+    return(sa*9.5)+32
+fa=fa_sa(10)
+print(fa)
+
+
+####
+def Weight_mass(m):
+    return(m*0.9)
+weight=Weight_mass(10)
+print(weight)
